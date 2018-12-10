@@ -6,3 +6,5 @@ Github Desktop Test
 Test from Github web interface
 
 Another update from GitHub web interface
+
+Change made in dev branch
