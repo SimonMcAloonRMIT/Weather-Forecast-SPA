@@ -1,0 +1,26 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">{{ convertToDate({ dt: weatherDay.dt }) | date: dateFormat }}</h3>
+    </div>
+    <div class="panel-body">
+
+        <div class="float-left">
+            <div>
+                <img ng-src="{{ weatherIcon({ icon: weatherDay.weather[0].icon }) }}" />
+            </div>        
+        </div>
+        
+        <div class="float-right">
+            <div class="text-capitalize">
+                {{ weatherDay.weather[0].description }}            
+            </div>               
+            <div>
+                <b>Min</b> {{ convertToStandard({ daytimeTemp: weatherDay.temp.min }) }}&deg;       
+            </div>
+            <div>
+                <b>Max</b> {{ convertToStandard({ daytimeTemp: weatherDay.temp.max }) }}&deg;       
+            </div>        
+        </div>            
+   
+    </div>
+</div>
