@@ -1,6 +1,10 @@
 // ROUTES
 weatherApp.config(function($routeProvider) {
    $routeProvider
+   .when('', {
+       templateUrl: 'pages/home.html',
+       controller: 'homeController'
+   })   
    .when('/', {
        templateUrl: 'pages/home.html',
        controller: 'homeController'
