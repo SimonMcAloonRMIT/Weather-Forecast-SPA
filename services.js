@@ -13,7 +13,7 @@ weatherApp.service('weatherService', ['$resource', function($resource) {
 
 weatherApp.service('weatherServiceFromNodeJS', ['$resource', function($resource) {
     this.GetWeather = function(city, days) {
-        var weatherAPI = $resource('http://3.104.38.85:3000/weather/' + city + "/" + days);
+        var weatherAPI = $resource('http://13.236.68.68:3000/weather/' + city + "/" + days);
                         
         return weatherAPI.get();                    
     };
